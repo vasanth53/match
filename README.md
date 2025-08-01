@@ -32,7 +32,7 @@ A Progressive Web App (PWA) React Game
    ```bash
    npm run build
    ```
-
+   
 ## Usage
 - Open the app in your browser or install it as a PWA
 
