@@ -10,8 +10,6 @@ A Progressive Web App (PWA) React Game
 - PWA support (installable, offline-ready)
 - Responsive design for mobile and desktop
 - Fast and lightweight
-- Easy to deploy on Netlify or Vercel
-- Simple game logic for learning and extension
 
 ## Getting Started
 
