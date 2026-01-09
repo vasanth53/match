@@ -32,6 +32,9 @@ A Progressive Web App (PWA) React Game
    ```
    
 ## Usage
+
+
+
 - Open the app in your browser or install it as a PWA
 
 ## License
