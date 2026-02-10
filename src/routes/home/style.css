@@ -19,6 +19,18 @@
 	font-size: 1.2rem;
 }
 
+.difficultySelection {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.difficultySelection h3 {
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+}
+
 .button {
   width: 200px;
   height: 50px;
@@ -33,4 +45,15 @@
   font-family: 'Press Start 2P', cursive;
   font-size: 1.2rem;
 	cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f5b935;
+}
+
+.button:active {
+  background-color: #e7a61a;
+  -webkit-box-shadow: 0px 1px 2px 0px #000;
+  -moz-box-shadow: 0px 1px 2px 0px #000;
+  box-shadow: 0px 1px 2px 0px #000;
 }

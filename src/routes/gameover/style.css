@@ -23,6 +23,12 @@
   font-size: 6rem;
 }
 
+.results {
+	margin-top: 20px;
+	font-size: 1.2rem;
+	line-height: 1.8;
+}
+
 .button {
   width: 200px;
   height: 50px;
