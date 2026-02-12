@@ -29,13 +29,11 @@ export default class Game extends Component {
 		}
 
 		return 'DEFAULT';
-	}
-	;
+	};
 
 	createCardClickListener = card => () => {
 		this.flipCard(card);
-	}
-	;
+	};
 	
 	flipCard = card => {
 		const { flippedCards } = this.state;
@@ -48,8 +46,7 @@ export default class Game extends Component {
 		}
 
 		this.flipSecondCard(card);
-	}
-	;
+	};
 
 	flipSecondCard = card => {
 		const { flippedCards, isMatched, score, numberOfPairs, moves } = this.state;
@@ -64,7 +61,8 @@ export default class Game extends Component {
 				if (score + 1 === numberOfPairs) { // Adjusted win condition
 					this.handleWin();
 				}
-			} else {
+			}
+			else {
 				// it's a mismatch, so flip the cards back and penalize the time
 				this.setState({ time: Math.max(0, this.state.time - 5), timePenalty: true });
 				setTimeout(() => this.setState({ timePenalty: false }), 500);
@@ -102,10 +100,12 @@ export default class Game extends Component {
 		if (numberOfPairs <= 6) { // 12 cards (4x3)
 			columns = 4;
 			rows = 3;
-		} else if (numberOfPairs <= 10) { // 20 cards (5x4)
+		}
+		else if (numberOfPairs <= 10) { // 20 cards (5x4)
 			columns = 5;
 			rows = 4;
-		} else { // 30 cards (6x5)
+		}
+		else { // 30 cards (6x5)
 			columns = 6;
 			rows = 5;
 		}
@@ -114,8 +114,7 @@ export default class Game extends Component {
 			gridTemplateColumns: `repeat(${columns}, 80px)`,
 			gridTemplateRows: `repeat(${rows}, 80px)`
 		};
-	}
-	;
+	};
 
 	constructor(props) {
 		super(props);
@@ -136,7 +135,8 @@ export default class Game extends Component {
 		this.timer = setInterval(() => {
 			if (this.state.time <= 0) {
 				this.handleGameOver();
-			} else {
+			}
+			else {
 				this.setState({ time: this.state.time - 1 });
 			}
 		}, 1000);

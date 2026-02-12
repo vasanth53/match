@@ -12,7 +12,22 @@
     "test": "jest"
   },
   "eslintConfig": {
-    "extends": "eslint-config-synacor"
+    "extends": "eslint-config-synacor",
+    "settings": {
+      "react": {
+        "pragma": "h",
+        "version": "detect"
+      },
+      "import/resolver": {
+        "alias": {
+          "map": [
+            ["react", "preact-compat"],
+            ["react-dom", "preact-compat"]
+          ],
+          "extensions": [".js", ".jsx", ".json"]
+        }
+      }
+    }
   },
   "eslintIgnore": [
     "build/*"
